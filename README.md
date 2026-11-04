@@ -1,2 +1,208 @@
 # vision-optical.
 VISION OPTICAL - Online Store for Prescription Glasses, Sunglasses and Optical Products. Hiyo inatosha kabisa.
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VISION OPTICAL</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #172033;
+}
+
+header {
+  background: #071b35;
+  color: white;
+  padding: 22px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #d6b45c;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.hero {
+  background: linear-gradient(120deg,#071b35,#174b75);
+  color: white;
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero button {
+  background: #d6b45c;
+  border: none;
+  padding: 14px 25px;
+  margin-top: 25px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 45px 6%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+}
+
+.product {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0001;
+  padding-bottom: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.product h3 {
+  padding: 14px 15px 5px;
+}
+
+.product p {
+  padding: 5px 15px;
+  color: #555;
+}
+
+.price {
+  color: #174b75 !important;
+  font-weight: bold;
+}
+
+.order {
+  display: block;
+  margin: 12px 15px 0;
+  padding: 12px;
+  text-align: center;
+  background: #087e55;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+footer {
+  background: #071b35;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+@media(max-width:600px) {
+  .hero h1 {font-size: 29px;}
+  header {justify-content: center;}
+  nav a {margin: 5px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">VISION OPTICAL</div>
+  <nav>
+    <a href="#home">Nyumbani</a>
+    <a href="#products">Miwani</a>
+    <a href="#contact">Mawasiliano</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Karibu VISION OPTICAL</h1>
+  <p>
+    Tunakuletea miwani bora za matibabu ya macho
+    na miwani mingine kwa mahitaji yako.
+  </p>
+  <button onclick="document.getElementById('products').scrollIntoView()">
+    Tazama Miwani
+  </button>
+</section>
+
+<section class="section" id="products">
+  <h2>Miwani Zetu</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600" alt="Miwani ya macho">
+      <h3>Miwani ya Matibabu</h3>
+      <p>Kwa mahitaji ya uoni kulingana na vipimo vya macho.</p>
+      <p class="price">TSh 45,000</p>
+      <a class="order" href="https://wa.me/255700000000?text=Nahitaji%20Miwani%20ya%20Matibabu">Agiza WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600" alt="Miwani ya jua">
+      <h3>Miwani ya Jua</h3>
+      <p>Miwani ya kujikinga na mwanga wa jua.</p>
+      <p class="price">TSh 35,000</p>
+      <a class="order" href="https://wa.me/255694957181?text=Nahitaji%20Miwani%20ya%20Jua">Agiza WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?w=600" alt="Miwani ya kisasa">
+      <h3>Miwani ya Kisasa</h3>
+      <p>Mitindo mbalimbali ya miwani.</p>
+      <p class="price">TSh 40,000</p>
+      <a class="order" href="https://wa.me/255700000000?text=Nahitaji%20Miwani%20ya%20Kisasa">Agiza WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Wasiliana Nasi</h2>
+  <p style="text-align:center">
+    VISION OPTICAL – Huduma bora za macho.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 VISION OPTICAL. Haki zote zimehifadhiwa.</p>
+</footer>
+
+</body>
+</html>
